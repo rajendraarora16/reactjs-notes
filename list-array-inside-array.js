@@ -30,3 +30,12 @@ export default function RenderRadioButton({ groupData, workingGroup }) {
     </>
   );
 }
+
+/*
+  const data = {
+    Group1: ["A1", "A2", "A3", "A4"],
+    Group2: ["B1", "B2", "B3", "B4"],
+    Group3: ["C1", "C2", "C3", "C4"],
+    Group4: ["D1", "D2", "D3", "D4"]
+  };
+*/
