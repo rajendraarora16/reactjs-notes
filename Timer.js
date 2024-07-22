@@ -13,6 +13,7 @@ const Timer = () => {
 
     // unmounting to clear interval during "stop" button onClick
     return () => clearInterval(timer);
+    
   }, [isTimerStarted]);
 
   const startCounter = (_event) => {
