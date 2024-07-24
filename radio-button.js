@@ -15,7 +15,7 @@ export default function App() {
           <>
             <div onChange={handleOnchange}>
               
-              // Here name as "options" should remain constant to select one radio option
+              // Here name as "options" should remain constant to select one radio option from multiple
               
               <input type="radio" name="options" value={item} /> 
               <label htmlFor="options">{item}</label>
