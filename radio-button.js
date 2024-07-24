@@ -14,8 +14,11 @@ export default function App() {
         return (
           <>
             <div onChange={handleOnchange}>
-              <input type="radio" name="options" value={item} />
-              <label for="options">{item}</label>
+              
+              // Here name as "options" should remain constant to select one radio option
+              
+              <input type="radio" name="options" value={item} /> 
+              <label htmlFor="options">{item}</label>
               <br />
             </div>
           </>
