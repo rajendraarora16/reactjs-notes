@@ -5,6 +5,8 @@ const counterSlice = createSlice({
     initialState: {
         count: 0,
     },
+    // reducer is used because this "increment", "decrement" and "incrementByManual" 
+    // has no loading, reject and succcess  state like API response
     reducers: {
         increment: (state) => {
             state.count = state.count + 1;
