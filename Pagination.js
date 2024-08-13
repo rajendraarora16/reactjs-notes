@@ -27,7 +27,10 @@ function App() {
   const firstIndex = lastIndex - recordsPerPage;
   const records = data.slice(firstIndex, lastIndex);
   const nPage = Math.ceil(data.length / recordsPerPage);
-  const numbers = [...Array(nPage + 1).keys()].slice(1);
+  
+  const numbers = Array.from({ length: nPage }, (_item, index) => index + 1);
+// or
+// [...Array(nPage + 1).keys()].slice(1);
 
 
   console.log("data: ", data);
