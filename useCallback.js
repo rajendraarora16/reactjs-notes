@@ -4,7 +4,6 @@ const App = () => {
 
     const [count, setCount] = useState(0);
     
-
     // useCallback - so it will prevent to re-render unnecessarily from child component.
     const increment = useCallback(() => {
         setCount(count + 1);
