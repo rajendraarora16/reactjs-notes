@@ -12,7 +12,7 @@ const withGreeting = (WrappedComp) => {
 }
 
 const Hey = (props) => {
-  console.log("props: ", props);
+  console.log("props: ", props); // you will now have access to that props
   return <><div>I am from Hey component</div></>
 }
 
