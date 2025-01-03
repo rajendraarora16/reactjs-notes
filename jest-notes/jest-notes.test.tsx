@@ -44,4 +44,13 @@ describe('update redux store', () => {
       json: () => Promise.resolve({ success: true, status: 200 }),
     });
   });
+
+  it("mock to type input field", async () => {
+
+    //userEvent provides more realistic simulation for user behavior.
+    const inputField = screen.getByTestId('input-id');
+    await userEvent.type(inputField, 'hello world');
+
+    expect(inputField).toHaveValue('hello world');
+  });
 });
